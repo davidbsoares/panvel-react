@@ -8,12 +8,7 @@
 ---
 
 ## 🖥 Preview 
-<details>
-  <summary>Clique para ver a imagem!</summary>
-  
   ![](/src/assets/preview.png)
-  
-</details>
 
 ---
 
