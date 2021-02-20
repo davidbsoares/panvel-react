@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
 import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
 import AppsIcon from '@material-ui/icons/Apps';
 import { styled } from '@material-ui/core/styles';
@@ -24,7 +26,25 @@ const SortBtn = styled(Button)({
   width: '200px',
 });
 
-const Buttons = () => {
+const StyledMenu = styled(Menu)({
+  width: '300px',
+});
+const StyledMenuItem = styled(MenuItem)({
+  width: '200px',
+  justifyContent: 'center',
+});
+
+const Buttons = ({ setPostsPerPage }) => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <StyledDiv>
       <QuantityBtn
@@ -32,9 +52,47 @@ const Buttons = () => {
         variant="contained"
         startIcon={<AppsIcon />}
         disableElevation
+        aria-controls="simple-menu"
+        aria-haspopup="true"
+        onClick={handleClick}
       >
         Quantidade
       </QuantityBtn>
+      <StyledMenu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(1)}>
+          1
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(2)}>
+          2
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(3)}>
+          3
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(4)}>
+          4
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(5)}>
+          5
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(6)}>
+          6
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(7)}>
+          7
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(8)}>
+          8
+        </StyledMenuItem>
+        <StyledMenuItem onClick={() => handleClose && setPostsPerPage(9)}>
+          9
+        </StyledMenuItem>
+      </StyledMenu>
       <SortBtn
         size="small"
         variant="contained"

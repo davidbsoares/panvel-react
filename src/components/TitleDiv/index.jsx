@@ -35,6 +35,7 @@ const MainDiv = styled.div`
 
   @media (max-width: 600px) {
     width: 100vw;
+    margin: 0 5px 0 5px;
     padding: 20px 5px 20px 5px;
   }
 `;
@@ -44,9 +45,9 @@ const TitleDiv = () => {
     <StyledDiv>
       <StyledImg src={Img} />
       <MainDiv>
-        <Typography variant="h4">CAPILAR</Typography>
-        <Typography variant="h3">FORTALECIMENTO</Typography>
-        <Typography variant="subtitle1">
+        <Typography variant="h5">CAPILAR</Typography>
+        <Typography variant="h4">FORTALECIMENTO</Typography>
+        <Typography variant="subtitle2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
           tincidunt leo nisl. Phasellus urna nisl, blandit et odio mattis,
           laoreet rutrum neque.
