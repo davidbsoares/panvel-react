@@ -8,7 +8,7 @@ const Post = styled('div')({
   padding: '10px',
   margin: '30px',
   background: 'white',
-  width: '500px',
+  width: '28rem',
   marginBottom: '15px',
   boxShadow: '1px 2px #BFBFBF',
 });

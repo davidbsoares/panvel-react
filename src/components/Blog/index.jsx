@@ -42,7 +42,7 @@ const StyledAbout = styled(About)`
   grid-area: A;
 `;
 
-const Blog = ({ posts, loading, currentPosts }) => {
+const Blog = ({ posts, loading }) => {
   return (
     <StyledDiv>
       <TitleDiv>

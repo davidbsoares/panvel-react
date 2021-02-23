@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 const StyledDiv = styled.div`
   width: 100vw;
   display: flex;
-  margin-top: 62px;
+  margin-top: 55px;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -25,18 +25,17 @@ const StyledImg = styled.img`
 const MainDiv = styled.div`
   flex: 1;
   width: 50vw;
+  margin: 0;
   background-color: #dc8e85;
   color: white;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   padding: 80px 50px 50px 50px;
   text-shadow: 1px 1px #5c3b37;
 
   @media (max-width: 600px) {
     width: 100vw;
-    margin: 0 5px 0 5px;
-    padding: 20px 5px 20px 5px;
+    margin: 0;
+    padding: 20px 5px 20px 15px;
   }
 `;
 

@@ -6,7 +6,7 @@ const StyledDiv = styled('div')({
   backgroundColor: '#DC8E85',
   width: '75vw',
   height: '40px',
-  margin: '20px',
+  margin: '20px 0',
   color: 'white',
   display: 'flex',
   justifyContent: 'center',
@@ -14,6 +14,7 @@ const StyledDiv = styled('div')({
 });
 const StyledTypography = styled(Typography)({
   color: 'white',
+  fontSize: '.9rem',
 });
 
 const StyledA = styled('a')({
