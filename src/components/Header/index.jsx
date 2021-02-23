@@ -88,10 +88,6 @@ export default function Header() {
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
 
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
@@ -113,7 +109,7 @@ export default function Header() {
     placeItems: 'center',
   });
 
-  const StyledImg = styled('div')({
+  const StyledImg = styled('img')({
     width: '100px',
     marginRight: '15px',
   });
