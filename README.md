@@ -8,7 +8,20 @@
 ---
 
 ## 🖥 Preview 
-  ![](/src/assets/preview.png)
+<details>
+  <summary>Preview Desktop</summary>
+  
+   ![](/src/assets/preview.png)
+  
+</details>
+ 
+ <details>
+  <summary>Preview Mobile</summary>
+  
+   ![](/src/assets/previewmob.png)
+  
+</details>
+  
 
 ---
 
@@ -42,9 +55,6 @@ cd proffy-discovery
 
 # Baixar as dependências
 npm i
-
-# Executar o servidor
-npm run server
 
 # Executar o projeto
 npm start
