@@ -28,7 +28,9 @@ function App() {
   }, []);
 
   const fetchPosts = async () => {
-    const res = await fetch('http://localhost:5000/posts');
+    const res = await fetch(
+      'https://my-json-server.typicode.com/davidbsoares/panvel-react/db'
+    );
     const data = await res.json();
 
     return data;
